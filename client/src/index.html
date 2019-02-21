@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>TITLE</title>
-        <meta name="description" content="description" >
-    </head>
-    <body>
-        <header>
-            <h1>CONTENT HEADER</h1>
-        </header>
-        <main>
-            <div id="app">
-                <span>Will not show this if React Component App is rendered correctly</span>
-            </div>
-        </main>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <title>WebSockets Demo</title>
+  <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font: 13px Helvetica, Arial; }
+    form { background: #444444; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+    form input { border: 0; padding: 10px; width: 60%; margin-right: .5%; }
+    form button { width: 15%; background: rgb(130, 224, 255); border: none; margin: 0 10px; padding: 10px; float: right;}
+    #messages { list-style-type: none; margin: 0; padding: 0; }
+    #messages li { padding: 5px 10px; }
+    #messages li:nth-child(odd) { background: #eee; }
+  </style>
+</head>
+<body>
+  <div id="page-wrapper">
+    <h1>WebSockets Demo</h1>
+
+    <div id="status">Connecting...</div>
+    <ul id="messages"></ul>
+
+    <form id="message-form" action="#" method="post">
+      <input id="message" placeholder="Write your message here..." required></input>
+      <!-- <button type="button" id="close">Close Connection</button> -->
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- <form id="message-form" action="">
+      <input id="msg" autocomplete="off" /><button>Send</button>
+    </form> -->
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js" integrity="sha256-WPeFPWD3PZQUDrpFnDM1N2KadNVwCfNS4cCZ78b76T8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>
+
+
+
+
