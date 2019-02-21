@@ -1,7 +1,7 @@
 {
-  "name": "new-react-app-setup",
+  "name": "ChatApp",
   "version": "1.0.0",
-  "description": "Basic setup of react app, webpack, and dependencies",
+  "description": "Chat Message App using Socket.IO and Vanilla JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/John-Michael-Long/new-react-app-setup.git"
+    "url": "git+https://github.com/John-Michael-Long/twittlerApp.git"
   },
   "author": "JM Long",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/John-Michael-Long/new-react-app-setup/issues"
+    "url": "https://github.com/John-Michael-Long/twittlerApp.git/issues"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -44,7 +44,8 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "react": "^15.6.2",
-    "react-dom": "^15.6.2"
+    "react-dom": "^15.6.2",
+    "socket.io": "^2.2.0"
   },
-  "homepage": "https://github.com/John-Michael-Long/new-react-app-setup#readme"
+  "homepage": "https://github.com/John-Michael-Long/twittlerApp.git#readme"
 }
